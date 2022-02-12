@@ -90,10 +90,6 @@ section {
   list-style-type: none;
 }
 
-.social-media ul li {
-  margin-right: 15px;
-}
-
 .project {
   padding: 50px 0;
   display: grid;
@@ -186,7 +182,6 @@ section {
   font-family: Poppins, sans-serif;
   font-size: 16px;
   color: #344563;
-  margin-top: 5px;
   margin: 15px 0;
 }
 
@@ -205,9 +200,6 @@ section {
 
 .skill-container li {
   padding: 15px;
-}
-
-.skill-container li {
   margin-top: 15px;
   display: flex;
   padding-right: 15px;
@@ -220,7 +212,9 @@ section {
   font-size: 15px;
   line-height: 20px;
 }
-
+.social-media ul li {
+  margin-right: 15px;
+}
 .skill-container h5 {
   margin-left: 15px;
 }
