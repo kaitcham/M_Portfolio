@@ -104,7 +104,7 @@ section {
 .card {
   padding: 12px;
   border-radius: 12px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #a7aeff;
 }
 
@@ -200,7 +200,7 @@ section {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
+  color: #000;
 }
 
 .skill-container li {
