@@ -3,9 +3,9 @@
 # Portfolio
 
 > Portfolio of Microverse projects
-> ![screenshot](images/Mobile-skeleton.JPG)
+> ![screenshot](images/Mobile-skeleton.JPG) > ![screenshot](images/Mobile-project-skeleton.JPG) > ![screenshot](images/Mobile-about-me-skeleton.JPG) > ![screenshot](images/Mobile-language-skeleton.JPG)
 
-This project is a portfolio project I'm build at Microverse.
+This project is a portfolio project I'm building at Microverse.
 
 Things done so far in the project:
 
