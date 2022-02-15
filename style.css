@@ -102,3 +102,45 @@ main {
     width: 25px;
   }
 }
+.contact-form{
+  background-color: #6070FF
+}
+
+.contact-form h2{
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+
+  color: #FFFFFF;
+  
+}
+
+.contact-form p{
+font-family: Poppins, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #EBEBFF;
+}
+
+.form input{
+padding: 15px;
+margin-bottom: 15px;
+width: 100%;
+background: #FFFFFF;
+border: 1px solid #CFD8DC;
+border-radius: 8px;
+}
+
+.form textarea{
+width: 100%;
+margin-bottom: 15px;
+background: #FFFFFF;
+border: 1px solid #CFD8DC;
+border-radius: 8px;
+height:15rem
+}
