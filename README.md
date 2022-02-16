@@ -3,7 +3,7 @@
 # Portfolio
 
 > Portfolio of Microverse projects
-> ![screenshot](images/Contact-1.JPG) > ![screenshot](images/Contact-2.JPG)
+> ![screenshot](images/Contact.JPG)
 
 This project is a portfolio project I'm build at Microverse.
 
