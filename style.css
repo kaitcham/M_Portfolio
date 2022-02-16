@@ -8,7 +8,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -62,7 +61,6 @@ header a {
 
 main {
   flex: 1;
-  padding: 30px;
 }
 
 section {
@@ -197,6 +195,16 @@ section {
   margin: 15px 0;
 }
 
+.contact-form p {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
 .project-skills li p {
   display: flex;
   justify-content: space-between;
@@ -256,4 +264,60 @@ section {
     display: flex;
     flex-direction: column;
   }
+}
+
+.section-form {
+  background: #6070ff url("images/Cbackground.png") no-repeat right;
+  border-top-left-radius: 100px;
+  margin-top: 60px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 20px;
+}
+
+.contact-form h2 {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-top: 80px;
+  color: #fff;
+}
+
+.form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-family: Poppins, sans-serif;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
+
+.form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-family: Poppins, sans-serif;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  height: 15rem;
+}
+
+.form-btn {
+  padding: 15px 20px;
+  font-family: Poppins, sans-serif;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  color: #6070ff;
 }
