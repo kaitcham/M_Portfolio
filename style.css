@@ -8,7 +8,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   background-image: url("images/HeaderBg.svg");
@@ -39,7 +38,6 @@ header a {
 
 main {
   flex: 1;
-  padding: 30px;
 }
 
 .intro {
@@ -102,45 +100,69 @@ main {
     width: 25px;
   }
 }
-.contact-form{
-  background-color: #6070FF
+
+.section-form {
+  background: #6070ff;
+  border-top-left-radius: 100px;
+  margin-top: 60px;
 }
 
-.contact-form h2{
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 20px;
+}
+
+.contact-form h2 {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-
-  color: #FFFFFF;
-  
+  text-align: center;
+  margin-top: 80px;
+  color: #ffffff;
 }
 
-.contact-form p{
-font-family: Poppins, sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-color: #EBEBFF;
+.contact-form p {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
 }
 
-.form input{
-padding: 15px;
-margin-bottom: 15px;
-width: 100%;
-background: #FFFFFF;
-border: 1px solid #CFD8DC;
-border-radius: 8px;
+.form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-family: Poppins, sans-serif;
+  background: #ffffff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
 }
 
-.form textarea{
-width: 100%;
-margin-bottom: 15px;
-background: #FFFFFF;
-border: 1px solid #CFD8DC;
-border-radius: 8px;
-height:15rem
+.form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-family: Poppins, sans-serif;
+  background: #ffffff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  height: 15rem;
+}
+
+.form-btn {
+  padding: 15px 20px;
+  font-family: Poppins, sans-serif;
+  background: #ffffff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  color: #6070ff;
 }
