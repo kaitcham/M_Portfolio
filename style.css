@@ -267,7 +267,7 @@ section {
 }
 
 .section-form {
-  background: #6070ff;
+  background: #6070ff url("images/Cbackground.png") no-repeat right;
   border-top-left-radius: 100px;
   margin-top: 60px;
 }
