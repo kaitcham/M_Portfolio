@@ -3,9 +3,10 @@
 # Portfolio
 
 > Portfolio of Microverse projects
+
 > ![screenshot](images/Contact.JPG)
 
-This project is a portfolio project I'm build at Microverse.
+This project is a portfolio project I'm building at Microverse.
 
 Things done so far in the project:
 
