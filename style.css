@@ -103,10 +103,6 @@ section {
   list-style: none;
 }
 
-.social-media ul li img {
-  width: 25px;
-}
-
 .project-section {
   background-color: #f8f6f6;
 }
@@ -280,6 +276,10 @@ section {
 .social-media ul li {
   margin-top: 15px;
   margin-right: 15px;
+}
+
+.social-media ul li img {
+  width: 25px;
 }
 
 .section-form {
