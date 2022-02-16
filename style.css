@@ -36,6 +36,8 @@ a {
   text-decoration: none;
 }
 
+/* My CSS */
+
 header {
   position: fixed;
   width: 100%;
@@ -59,6 +61,8 @@ header a {
   display: block;
 }
 
+/* Main */
+
 main {
   flex: 1;
 }
@@ -68,10 +72,21 @@ section {
 }
 
 .intro {
-  background-image: url("images/HeaderBg.svg");
+  background: #fff url("images/HeaderBg.png") no-repeat right;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 30px;
+}
+
+.intro h1 {
+  font-size: 35px;
+  margin-top: 50px;
+}
+
+.intro p {
+  font-size: 20px;
+  margin-top: 15px;
 }
 
 .social-media {
@@ -85,11 +100,24 @@ section {
 .social-media ul {
   margin-top: 10px;
   display: flex;
-  list-style-type: none;
+  list-style: none;
+}
+
+.social-media ul li {
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.social-media ul li img {
+  width: 25px;
+}
+
+.project-section {
+  background-color: #f8f6f6;
 }
 
 .project {
-  background-color: #e5e5e5;
+  padding: 30px;
   margin: 50px 0;
   display: grid;
   grid-gap: 3rem;
@@ -188,21 +216,27 @@ section {
   color: #fff;
 }
 
-.about-desc {
-  font-family: Poppins, sans-serif;
-  font-size: 16px;
-  color: #344563;
-  margin: 15px 0;
+.about-me {
+  padding: 30px;
 }
 
-.contact-form p {
+.about-container h2 {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  align-items: center;
+  color: #172b4d;
+}
+.about-desc {
+  margin-top: 15px;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #ebebff;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .project-skills li p {
@@ -233,37 +267,8 @@ section {
   line-height: 20px;
 }
 
-.social-media ul li {
-  margin-right: 15px;
-}
-
 .skill-container h5 {
   margin-left: 15px;
-}
-
-@media all and (max-width: 600px) {
-  .intro h1 {
-    font-size: 35px;
-    margin-top: 50px;
-  }
-
-  .intro p {
-    font-size: 20px;
-    margin-top: 15px;
-  }
-
-  .social-media ul li {
-    margin-top: 15px;
-  }
-
-  .social-media ul li img {
-    width: 25px;
-  }
-
-  .project {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .section-form {
@@ -278,7 +283,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  padding: 20px;
+  padding: 30px;
 }
 
 .contact-form h2 {
@@ -290,6 +295,16 @@ section {
   text-align: center;
   margin-top: 80px;
   color: #fff;
+}
+
+.contact-form > p {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
 }
 
 .form input {
@@ -310,7 +325,7 @@ section {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  height: 15rem;
+  height: 10rem;
 }
 
 .form-btn {
@@ -320,4 +335,11 @@ section {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   color: #6070ff;
+}
+
+@media all and (max-width: 600px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
 }
