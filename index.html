@@ -39,13 +39,26 @@
             method="POST"
             class="form"
           >
-            <input type="text" name="name" placeholder="Name" maxlength="30" />
-            <input type="email" name="email" id="email" placeholder="Email" />
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              maxlength="30"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
             <textarea
               name="message"
               id="textarea"
               placeholder="Write your message here"
               maxlength="500"
+              required
             ></textarea>
             <button class="form-btn" type="submit">Get It Touch</button>
           </form>
