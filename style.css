@@ -195,6 +195,16 @@ section {
   margin: 15px 0;
 }
 
+.contact-form p {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
 .project-skills li p {
   display: flex;
   justify-content: space-between;
@@ -279,17 +289,7 @@ section {
   line-height: 52px;
   text-align: center;
   margin-top: 80px;
-  color: #ffffff;
-}
-
-.contact-form p {
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #ebebff;
+  color: #fff;
 }
 
 .form input {
@@ -297,7 +297,7 @@ section {
   padding: 15px;
   margin-bottom: 15px;
   font-family: Poppins, sans-serif;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
@@ -307,7 +307,7 @@ section {
   padding: 15px;
   margin-bottom: 15px;
   font-family: Poppins, sans-serif;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   height: 15rem;
@@ -316,7 +316,7 @@ section {
 .form-btn {
   padding: 15px 20px;
   font-family: Poppins, sans-serif;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   color: #6070ff;
