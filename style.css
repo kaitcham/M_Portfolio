@@ -111,8 +111,7 @@ section {
   padding: 30px;
   margin: 50px 0;
   display: grid;
-  grid-gap: 3rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
 }
 
 .card {
@@ -336,11 +335,4 @@ section {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   color: #6070ff;
-}
-
-@media all and (max-width: 600px) {
-  .project {
-    display: flex;
-    flex-direction: column;
-  }
 }
