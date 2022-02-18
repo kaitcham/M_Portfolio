@@ -358,6 +358,12 @@ section {
 
   .nav-items li a {
     color: #172b4d;
+    transition: all, 0.5s, ease-in, color;
+  }
+
+  .nav-items li a:hover {
+    text-decoration: underline;
+    color: rgb(182, 92, 92);
   }
 
   .intro {
