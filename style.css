@@ -52,6 +52,14 @@ header a {
   font-size: 20px;
 }
 
+.navbar {
+  display: flex;
+}
+
+.nav-items {
+  display: none;
+}
+
 .menu-icon {
   border: 0;
   background-color: transparent;
@@ -65,6 +73,7 @@ header a {
 
 main {
   flex: 1;
+  height: 100vh;
 }
 
 section {
@@ -72,21 +81,12 @@ section {
 }
 
 .intro {
-  background: #fff url("images/HeaderBg.png") no-repeat right;
+  background: #fff url("images/background.svg") no-repeat right;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 30px;
-}
-
-.intro h1 {
-  font-size: 35px;
-  margin-top: 50px;
-}
-
-.intro p {
-  font-size: 20px;
-  margin-top: 15px;
+  height: 100vh;
 }
 
 .social-media {
@@ -100,15 +100,16 @@ section {
 .social-media ul {
   margin-top: 10px;
   display: flex;
+  align-items: baseline;
   list-style: none;
 }
 
 .project-section {
   background-color: #f8f6f6;
+  padding: 30px;
 }
 
 .project {
-  padding: 30px;
   margin: 50px 0;
   display: grid;
   grid-gap: 4rem;
@@ -128,6 +129,10 @@ section {
 .card img {
   width: 100%;
   height: auto;
+}
+
+.project-intro {
+  order: 1;
 }
 
 .project-title {
@@ -188,6 +193,7 @@ section {
   font-size: 17px;
   line-height: 24px;
   margin-top: 15px;
+  margin-bottom: 5px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -335,4 +341,98 @@ section {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   color: #6070ff;
+}
+
+@media all and (min-width: 600px) {
+  header .menu-icon {
+    display: none;
+  }
+
+  .nav-items {
+    display: flex;
+  }
+
+  .nav-items li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .nav-items li a {
+    color: #172b4d;
+  }
+
+  .intro {
+    background-image: url("images/Header.png");
+    background-size: contain;
+  }
+
+  .intro-container {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  .intro-container h1 {
+    font-size: 50px;
+    margin-top: 30px;
+  }
+
+  .intro-container p {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .project {
+    gap: 6rem;
+  }
+
+  .card {
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    height: 380px;
+    margin: 0 auto;
+    max-width: 1040px;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card img {
+    height: 100%;
+  }
+
+  .project-intro {
+    width: 100%;
+    height: 100%;
+    order: 0;
+  }
+
+  .project-title,
+  .project-details,
+  .project-desc,
+  .project-tech,
+  .project-button {
+    margin-bottom: 25px;
+  }
+
+  .about-me {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .contact-form {
+    max-width: 720px;
+    margin: 0 auto;
+  }
 }
