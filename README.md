@@ -4,7 +4,7 @@
 
 > Portfolio of Microverse projects
 
-> ![screenshot](images/Contact.JPG)
+> ![screenshot](images/Landing.JPG) > ![screenshot](images/Project.JPG) > ![screenshot](images/About.JPG)
 
 This project is a portfolio project I'm building at Microverse.
 
@@ -13,7 +13,7 @@ Things done so far in the project:
 #### 1. Build mobile skeleton
 
 - Parse a Figma design
-- Use Flexbox for positioning
+- Use Flexbox and CSS Grid for positioning
 - Use images and backgrounds
 
 ## Built With
@@ -40,18 +40,12 @@ git clone https://github.com/kaitcham/Portfolio
 - **To clone the mobile-skeleton branch**
 
 ```
-git clone -b mobile-skeleton https://github.com/kaitcham/Portfolio
+git clone -b mobile-skeleton https://github.com/kaitcham/Portfolio/mobile-skeleton
 ```
-
-**Notes:**
-
-- So far, only the first 2 sections of the mobile skeleton have been built. Please, view the website in mobile version.
-
-- Nothing has been merged to main yet.
 
 ## Authors
 
-👤 **Akasha Rojee**
+👤 **Kait Cham**
 
 - GitHub: [@kaitcham](https://github.com/kaitcham)
 - Twitter: [@kaitcham](https://twitter.com/kaitcham)
