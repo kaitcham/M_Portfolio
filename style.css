@@ -435,4 +435,15 @@ section {
     max-width: 720px;
     margin: 0 auto;
   }
+
+  /* button animation */
+
+  .form-btn {
+    transition: transform, color, 2s;
+  }
+
+  .form-btn:hover {
+    transform: scale(1.2);
+    color: rgb(182, 92, 92);
+  }
 }
