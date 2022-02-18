@@ -343,7 +343,7 @@ section {
   color: #6070ff;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 992px) {
   header .menu-icon {
     display: none;
   }
