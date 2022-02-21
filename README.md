@@ -23,7 +23,7 @@ Things done so far in the project:
 
 ## Live Demo
 
-[Live Demo Link](https://kaitcham.github.io/Portfolio/)
+[Live Demo Link!](https://kaitcham.github.io/Portfolio/)
 
 ## Getting Started
 
