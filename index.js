@@ -1,20 +1,27 @@
-let navMenu = document.querySelector(".navbar"); 
-let navIcon = document.querySelector(".fa-bars"); 
-let navLink = document.querySelectorAll(".nav-items li a");
+const body = document.querySelector('body');
+const navMenu = document.querySelector('.navbar');
+const navIcon = document.querySelector('.fa-bars');
+const navLink = Array.from(document.querySelectorAll('.nav-items li a'));
 
-function displayMenu() { 
-  navMenu.classList.toggle("menu-active"); 
-  navIcon.classList.add("is-active");
-} 
+const displayMenu = () => {
+  navMenu.classList.toggle('menu-active');
+  navIcon.classList.add('is-active');
+  body.style.overflow = 'hidden';
+};
 
-function closeMenu() {
-  navMenu.classList.toggle("menu-active");
-  navIcon.classList.remove("is-active");
-}
+displayMenu();
 
-[].forEach.call(navLink, function (link) {
+const closeMenu = () => {
+  navMenu.classList.toggle('menu-active');
+  navIcon.classList.remove('is-active');
+  body.style.overflow = 'visible';
+};
+
+closeMenu();
+
+navLink.forEach.call(navLink, (link) => {
   link.onclick = () => {
-    navMenu.classList.toggle("menu-active");
-    navIcon.classList.toggle("is-active");
+    navMenu.classList.toggle('menu-active');
+    navIcon.classList.toggle('is-active');
   };
 });

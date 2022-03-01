@@ -86,11 +86,9 @@ header i {
 }
 
 .nav-items i {
-  align-self: flex-end;
   color: #fff;
-  font-size: 32px;
+  font-size: 30px;
   margin-right: 5px;
-  margin-top: 5px;
   margin-bottom: 30px;
 }
 
@@ -315,6 +313,10 @@ section {
 .social-media ul li {
   margin-top: 15px;
   margin-right: 15px;
+}
+
+.nav-items li:nth-child(1) {
+  align-self: flex-end;
 }
 
 .social-media ul li img {
