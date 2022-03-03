@@ -1,35 +1,37 @@
-import projectsArray from "./data.js";
+import projectsArray from './data.js';
 
-const body = document.querySelector("body");
-const navMenu = document.querySelector(".navbar");
-const navIcon = document.querySelector(".fa-bars");
-const navLink = Array.from(document.querySelectorAll(".nav-items li a"));
+const body = document.querySelector('body');
+const navMenu = document.querySelector('.navbar');
+const navIcon = document.querySelector('.fa-bars');
+const navLink = Array.from(document.querySelectorAll('.nav-items li a'));
 
 window.displayMenu = () => {
-  navMenu.classList.toggle("menu-active");
-  navIcon.classList.add("is-active");
-  body.style.overflow = "hidden";
+  navMenu.classList.toggle('menu-active');
+  navIcon.classList.add('is-active');
+  body.style.overflow = 'hidden';
 };
 
 window.closeMenu = () => {
-  navMenu.classList.toggle("menu-active");
-  navIcon.classList.remove("is-active");
-  body.style.overflow = "visible";
+  navMenu.classList.toggle('menu-active');
+  navIcon.classList.remove('is-active');
+  body.style.overflow = 'visible';
 };
 
 navLink.forEach.call(navLink, (link) => {
   link.onclick = () => {
-    navMenu.classList.toggle("menu-active");
-    navIcon.classList.toggle("is-active");
-    body.style.overflow = "visible";
+    navMenu.classList.toggle('menu-active');
+    navIcon.classList.toggle('is-active');
+    body.style.overflow = 'visible';
   };
 });
 
-const projectCards = document.querySelector(".project");
-let htmlCode = "";
+const projectCards = document.querySelector('.project');
+let htmlCode = '';
 
 projectsArray.forEach((project) => {
-  const { title, image, imageAlt, info, shortDesc, languages, more } = project;
+  const {
+    title, image, imageAlt, info, shortDesc, languages, more,
+  } = project;
 
   if (projectsArray.indexOf(project) % 2 === 0) {
     htmlCode += `
@@ -41,20 +43,18 @@ projectsArray.forEach((project) => {
         <h2 class='project-title'>${title}</h2>
         <ul class='project-details'>
           ${info
-            .map((item) =>
-              item === info[0]
-                ? `<li>${item}</li>`
-                : `<li class='project-circle'></li><li>${item}</li>`
-            )
-            .join("")}
+    .map((item) => (item === info[0]
+      ? `<li>${item}</li>`
+      : `<li class='project-circle'></li><li>${item}</li>`))
+    .join('')}
         </ul>
         <p class='project-desc'>
           ${shortDesc}
         </p>
         <ul class='project-tech'>
           ${languages
-            .map((item) => `<li class='project-tag'>${item}</li>`)
-            .join("")}
+    .map((item) => `<li class='project-tag'>${item}</li>`)
+    .join('')}
         </ul>
         <button id='${title}' type='button' class='project-button' onclick='showPopup("${title}")'>
           ${more}
@@ -69,20 +69,18 @@ projectsArray.forEach((project) => {
         <h2 class='project-title'>${title}</h2>
         <ul class='project-details'>
           ${info
-            .map((item) =>
-              item === info[0]
-                ? `<li>${item}</li>`
-                : `<li class='project-circle'></li><li>${item}</li>`
-            )
-            .join("")}
+    .map((item) => (item === info[0]
+      ? `<li>${item}</li>`
+      : `<li class='project-circle'></li><li>${item}</li>`))
+    .join('')}
         </ul>
         <p class='project-desc'>
           ${shortDesc}
         </p>
         <ul class='project-tech'>
           ${languages
-            .map((item) => `<li class='project-tag'>${item}</li>`)
-            .join("")}
+    .map((item) => `<li class='project-tag'>${item}</li>`)
+    .join('')}
         </ul>
         <button id='${title}' class='project-button' type='button' onclick='showPopup("${title}")'>
           ${more}
@@ -98,15 +96,17 @@ projectsArray.forEach((project) => {
 
 projectCards.innerHTML = htmlCode;
 
-const popup = document.querySelector(".showPopup");
-let popupCode = "";
+const popup = document.querySelector('.showPopup');
+let popupCode = '';
 
 window.showPopup = (string) => {
   const project = projectsArray.filter((project) => project.title === string);
-  popup.style.display = "block";
-  body.style.overflow = "hidden";
+  popup.style.display = 'block';
+  body.style.overflow = 'hidden';
   project.forEach((elem) => {
-    const { title, image, imageAlt, info, longDesc, languages } = elem;
+    const {
+      title, image, imageAlt, info, longDesc, languages,
+    } = elem;
     popupCode += `
       <div class='popup-container'>
         <div class='popup'>
@@ -117,12 +117,10 @@ window.showPopup = (string) => {
             </div>
             <ul class='project-details'>
           ${info
-            .map((item) =>
-              item === info[0]
-                ? `<li>${item}</li>`
-                : `<li class='project-circle'></li><li>${item}</li>`
-            )
-            .join("")}
+    .map((item) => (item === info[0]
+      ? `<li>${item}</li>`
+      : `<li class='project-circle'></li><li>${item}</li>`))
+    .join('')}
         </ul>
             <div class='popup-image'>
               <img src='${image}' alt='${imageAlt}' />
@@ -134,8 +132,8 @@ window.showPopup = (string) => {
               <div class='popup-languages'>
                 <ul class='project-tech'>
                   ${languages
-                    .map((item) => `<li class='project-tag'>${item}</li>`)
-                    .join("")}
+    .map((item) => `<li class='project-tag'>${item}</li>`)
+    .join('')}
                 </ul>
                 <hr class='popup-skills' />
                 <div class='popup-buttons'>
@@ -153,33 +151,33 @@ window.showPopup = (string) => {
 };
 
 window.closePopup = () => {
-  popup.style.display = "none";
-  body.style.overflow = "visible";
-  popupCode = "";
+  popup.style.display = 'none';
+  body.style.overflow = 'visible';
+  popupCode = '';
 };
 
-const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-const mailInput = document.getElementById("email");
-const formSubmit = document.getElementById("form");
+const mailformat = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,3})+$/;
+const mailInput = document.getElementById('email');
+const formSubmit = document.getElementById('form');
 
 window.validateEmail = () => {
   if (
-    mailInput.value.match(mailformat) &&
-    mailInput.value.toLowerCase() === mailInput.value
+    mailInput.value.match(mailformat)
+    && mailInput.value.toLowerCase() === mailInput.value
   ) {
     return true;
-  } else {
-    document.querySelector(".submit-validation p").style.display = "block";
-    mailInput.addEventListener("click", () => {
-      document.querySelector(".submit-validation p").style.display = "none";
-      mailInput.value = "";
-    });
-    return false;
   }
+  document.querySelector('.submit-validation p').style.display = 'block';
+  mailInput.addEventListener('click', () => {
+    document.querySelector('.submit-validation p').style.display = 'none';
+    mailInput.value = '';
+  });
+  return false;
 };
 
-formSubmit.addEventListener("submit", (e) => { 
-  let valid = validateEmail(); 
-  if (!valid) { e.preventDefault(); 
-  } 
-}); 
+formSubmit.addEventListener('submit', (e) => {
+  const valid = window.validateEmail();
+  if (!valid) {
+    e.preventDefault();
+  }
+});

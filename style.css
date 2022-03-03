@@ -374,6 +374,11 @@ section {
   color: #ebebff;
 }
 
+.submit-validation > p {
+  display: none;
+  color: rgb(105, 20, 20);
+}
+
 .project-skills li p {
   display: flex;
   justify-content: space-between;
@@ -466,15 +471,10 @@ section {
   height: 10rem;
 }
 
-.submit-validation{
+.submit-validation {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-}
-
-.submit-validation > p {
-  display: none;
-  color: rgb(105, 20, 20);
 }
 
 .form-btn {
@@ -659,14 +659,14 @@ section {
 
   /* button animation */
   .submit-validation {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 1rem;
-}
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
 
-.submit-validation > p {
-  grid-column: span 2;
-}
+  .submit-validation > p {
+    grid-column: span 2;
+  }
 
   .form-btn {
     transition: transform, color, 2s;
