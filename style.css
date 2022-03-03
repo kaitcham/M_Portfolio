@@ -466,6 +466,17 @@ section {
   height: 10rem;
 }
 
+.submit-validation{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+}
+
+.submit-validation > p {
+  display: none;
+  color: rgb(105, 20, 20);
+}
+
 .form-btn {
   padding: 15px 20px;
   font-family: Poppins, sans-serif;
@@ -473,6 +484,7 @@ section {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   color: #6070ff;
+  cursor: pointer;
 }
 
 @media all and (min-width: 992px) {
@@ -646,13 +658,22 @@ section {
   }
 
   /* button animation */
+  .submit-validation {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+
+.submit-validation > p {
+  grid-column: span 2;
+}
 
   .form-btn {
     transition: transform, color, 2s;
   }
 
   .form-btn:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: rgb(182, 92, 92);
   }
 }
