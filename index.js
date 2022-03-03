@@ -178,3 +178,8 @@ window.validateEmail = () => {
   }
 };
 
+formSubmit.addEventListener("submit", (e) => { 
+  let valid = validateEmail(); 
+  if (!valid) { e.preventDefault(); 
+  } 
+}); 
