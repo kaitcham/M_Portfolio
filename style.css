@@ -607,7 +607,7 @@ section {
   .popup-description {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .popup-description p {
@@ -623,9 +623,8 @@ section {
   }
 
   .popup-btn {
-    display: flex;
-    align-items: center;
     margin-top: 12px;
+    padding: 10px;
   }
 
   .about-me {

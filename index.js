@@ -117,12 +117,10 @@ window.showPopup = (string) => {
             </div>
             <ul class='project-details'>
           ${info
-            .map((item) =>
-              item === info[0]
-                ? `<li>${item}</li>`
-                : `<li class='project-circle'></li><li>${item}</li>`
-            )
-            .join("")}
+    .map((item) => (item === info[0]
+      ? `<li>${item}</li>`
+      : `<li class='project-circle'></li><li>${item}</li>`))
+    .join('')}
         </ul>
             <div class='popup-image'>
               <img src='${image}' alt='${imageAlt}' />
@@ -134,8 +132,8 @@ window.showPopup = (string) => {
               <div class='popup-languages'>
                 <ul class='project-tech'>
                   ${languages
-                    .map((item) => `<li class='project-tag'>${item}</li>`)
-                    .join("")}
+    .map((item) => `<li class='project-tag'>${item}</li>`)
+    .join('')}
                 </ul>
                 <hr class='popup-skills' />
                 <div class='popup-buttons'>
