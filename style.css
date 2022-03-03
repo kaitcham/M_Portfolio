@@ -244,6 +244,103 @@ section {
   color: #fff;
 }
 
+.showPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.popup {
+  display: block;
+  background-color: #fff;
+  width: 90%;
+  max-height: 95vh;
+  border-radius: 15px;
+  overflow: auto;
+}
+
+.popup-card {
+  padding: 10px;
+}
+
+.close {
+  position: fixed;
+  right: 10%;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.popup-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-info {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.popup-info li {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a869a;
+  line-height: 16px;
+  margin-right: 8px;
+}
+
+.popup-image {
+  width: 100%;
+  height: 280px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.popup-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.popup-skills {
+  margin-top: 20px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.popup-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 5px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  color: #396df2;
+  background-color: #fff;
+  border: 1px solid #6070ff;
+}
+
 .about-me {
   padding: 30px;
 }
@@ -475,6 +572,59 @@ section {
   .project-tech,
   .project-button {
     margin-bottom: 25px;
+  }
+
+  .popup {
+    width: 70%;
+    max-height: 90vh;
+  }
+
+  .popup-card {
+    padding: 20px;
+  }
+
+  .close {
+    display: block;
+    top: 7vh;
+    right: 18%;
+    cursor: pointer;
+  }
+
+  .popup-image {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: 400px;
+  }
+
+  .popup-title {
+    margin-bottom: 5px;
+  }
+
+  .popup-card .project-details {
+    margin-bottom: 5px;
+  }
+
+  .popup-description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .popup-description p {
+    grid-column: span 2;
+  }
+
+  .popup-languages {
+    margin-top: 10px;
+  }
+
+  .popup-skills {
+    margin-bottom: 15px;
+  }
+
+  .popup-btn {
+    margin-top: 12px;
+    padding: 10px;
   }
 
   .about-me {
