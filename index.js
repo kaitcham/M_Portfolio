@@ -117,10 +117,12 @@ window.showPopup = (string) => {
             </div>
             <ul class='project-details'>
           ${info
-    .map((item) => (item === info[0]
-      ? `<li>${item}</li>`
-      : `<li class='project-circle'></li><li>${item}</li>`))
-    .join('')}
+            .map((item) =>
+              item === info[0]
+                ? `<li>${item}</li>`
+                : `<li class='project-circle'></li><li>${item}</li>`
+            )
+            .join("")}
         </ul>
             <div class='popup-image'>
               <img src='${image}' alt='${imageAlt}' />
@@ -132,13 +134,13 @@ window.showPopup = (string) => {
               <div class='popup-languages'>
                 <ul class='project-tech'>
                   ${languages
-    .map((item) => `<li class='project-tag'>${item}</li>`)
-    .join('')}
+                    .map((item) => `<li class='project-tag'>${item}</li>`)
+                    .join("")}
                 </ul>
                 <hr class='popup-skills' />
                 <div class='popup-buttons'>
-                  <button class='popup-btn' type='button'>See Live</button>
-                  <button class='popup-btn' type='button'>See Source</button>
+                  <button class='popup-btn' type='button'>See Live<img src="images/icons/live.svg" alt="see live"/></button>
+                  <button class='popup-btn' type='button'>See Source<img src="images/icons/git.png" alt="github"/></button>
                 </div>
               </div>
             </div>

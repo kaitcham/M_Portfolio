@@ -314,12 +314,9 @@ section {
 }
 
 .popup-description {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
-}
-
-.popup-description p {
-  grid-column: span 3;
 }
 
 .popup-skills {
@@ -328,10 +325,13 @@ section {
 
 .popup-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .popup-btn {
+  display: flex;
+  align-items: center;
   margin-top: 24px;
   margin-bottom: 5px;
   padding: 12px 22px;
@@ -605,12 +605,13 @@ section {
   }
 
   .popup-description {
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 
   .popup-description p {
-    grid-column: span 3;
+    grid-column: span 2;
   }
 
   .popup-languages {
@@ -622,6 +623,8 @@ section {
   }
 
   .popup-btn {
+    display: flex;
+    align-items: center;
     margin-top: 12px;
   }
 
