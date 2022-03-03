@@ -110,10 +110,10 @@ window.showPopup = (string) => {
     popupCode += `
       <div class='popup-container'>
         <div class='popup'>
-          <p><i class='fa-solid fa-xmark close' onclick='closePopup()'></i></p>
-          <div class='popup-card'>
+        <div class='popup-card'>
             <div class='popup-title'>
               <h2>${title}</h2>
+              <p><i class='fa-solid fa-xmark close' onclick='closePopup()'></i></p>
             </div>
             <ul class='project-details'>
           ${info

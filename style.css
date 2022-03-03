@@ -265,22 +265,21 @@ section {
 .popup {
   display: block;
   background-color: #fff;
-  width: 80%;
-  height: 600px;
+  width: 90%;
+  max-height: 95vh;
   border-radius: 15px;
   overflow: auto;
 }
 
-.close {
-  position: fixed;
-  top: 6%;
-  right: 12%;
-  font-size: 24px;
-  font-weight: bolder;
-}
-
 .popup-card {
   padding: 10px;
+}
+
+.close {
+  position: fixed;
+  right: 10%;
+  font-size: 24px;
+  font-weight: bolder;
 }
 
 .popup-title {
@@ -337,6 +336,8 @@ section {
   margin-bottom: 5px;
   padding: 12px 22px;
   border-radius: 8px;
+  color: #396df2;
+  background-color: #fff;
   border: 1px solid #6070ff;
 }
 
@@ -574,21 +575,24 @@ section {
   }
 
   .popup {
-    width: 80%;
+    width: 70%;
+    max-height: 90vh;
   }
 
   .popup-card {
-    padding: 15px;
+    padding: 20px;
   }
 
   .close {
     display: block;
-    top: 4%;
-    right: 12%;
+    top: 7vh;
+    right: 18%;
     cursor: pointer;
   }
 
   .popup-image {
+    margin-top: 15px;
+    margin-bottom: 20px;
     height: 400px;
   }
 
@@ -613,12 +617,8 @@ section {
     margin-top: 10px;
   }
 
-  .popup-languages ul.project-tech {
-    margin-bottom: 10px;
-  }
-
   .popup-skills {
-    margin-top: 0;
+    margin-bottom: 15px;
   }
 
   .popup-btn {
