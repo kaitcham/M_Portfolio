@@ -155,3 +155,25 @@ window.closePopup = () => {
   body.style.overflow = 'visible';
   popupCode = '';
 };
+
+const mailInput = document.getElementById('email');
+const formSubmit = document.getElementById('form');
+
+window.validateEmail = () => {
+  if (mailInput.value.toLowerCase() === mailInput.value) {
+    return true;
+  }
+  document.querySelector('.submit-validation p').style.display = 'block';
+  mailInput.addEventListener('click', () => {
+    document.querySelector('.submit-validation p').style.display = 'none';
+    mailInput.value = '';
+  });
+  return false;
+};
+
+formSubmit.addEventListener('submit', (e) => {
+  const valid = window.validateEmail();
+  if (!valid) {
+    e.preventDefault();
+  }
+});

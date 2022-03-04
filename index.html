@@ -81,9 +81,7 @@
         <div class="project"></div>
       </section>
 
-      <section class="showPopup">
-        
-      </section>
+      <section class="showPopup"></section>
 
       <!-- About Me -->
 
@@ -182,6 +180,7 @@
           <form
             action="https://formspree.io/f/mvolakkg"
             method="POST"
+            id ="form"
             class="form"
           >
             <input
@@ -205,7 +204,12 @@
               maxlength="500"
               required
             ></textarea>
-            <button class="form-btn" type="submit">Get It Touch</button>
+            <div class="submit-validation">
+              <button class="form-btn" type="submit" onclick="validateEmail()">
+                Get It Touch
+              </button>
+              <p>Invalid Email, Please try again</p>
+            </div>
           </form>
         </div>
       </section>
