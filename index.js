@@ -185,9 +185,9 @@ formSubmit.addEventListener('submit', (e) => {
   }
 });
 
-if(formSubmit){ 
-  const {name, email, message} = JSON.parse(localStorage.getItem('formData')); 
-  document.getElementById("name").value = name; 
-  document.getElementById("email").value = email; 
-  document.getElementById("message").value = message; 
-} 
+if (formSubmit) {
+  const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
+  document.getElementById('name').value = name;
+  document.getElementById('email').value = email;
+  document.getElementById('message').value = message;
+}
