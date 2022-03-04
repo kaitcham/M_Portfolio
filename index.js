@@ -175,5 +175,19 @@ formSubmit.addEventListener('submit', (e) => {
   const valid = window.validateEmail();
   if (!valid) {
     e.preventDefault();
+  } else {
+    const formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
   }
 });
+
+if (formSubmit) {
+  const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
+  document.getElementById('name').value = name;
+  document.getElementById('email').value = email;
+  document.getElementById('message').value = message;
+}
