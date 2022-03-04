@@ -175,5 +175,12 @@ formSubmit.addEventListener('submit', (e) => {
   const valid = window.validateEmail();
   if (!valid) {
     e.preventDefault();
+  } else {
+    const formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
   }
 });
