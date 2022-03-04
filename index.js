@@ -156,15 +156,11 @@ window.closePopup = () => {
   popupCode = '';
 };
 
-const mailformat = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,3})+$/;
 const mailInput = document.getElementById('email');
 const formSubmit = document.getElementById('form');
 
 window.validateEmail = () => {
-  if (
-    mailInput.value.match(mailformat)
-    && mailInput.value.toLowerCase() === mailInput.value
-  ) {
+  if (mailInput.value.toLowerCase() === mailInput.value) {
     return true;
   }
   document.querySelector('.submit-validation p').style.display = 'block';
