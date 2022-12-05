@@ -23,7 +23,7 @@ Things done so far in the project:
 
 ## Live Demo
 
-[Live Demo Link](https://kaitcham.github.io/Portfolio/)
+[Live Demo Link](https://kaitcham.github.io/M_Portfolio/)
 
 ## Getting Started
 
@@ -34,13 +34,13 @@ Use the following command in your terminal:
 - **To clone the main project**
 
 ```
-git clone https://github.com/kaitcham/Portfolio
+git clone https://github.com/kaitcham/M_Portfolio
 ```
 
 - **To clone the mobile-skeleton branch**
 
 ```
-git clone -b mobile-skeleton https://github.com/kaitcham/Portfolio/mobile-skeleton
+git clone -b mobile-skeleton https://github.com/kaitcham/M_Portfolio/mobile-skeleton
 ```
 
 ## Authors
@@ -49,13 +49,13 @@ git clone -b mobile-skeleton https://github.com/kaitcham/Portfolio/mobile-skelet
 
 - GitHub: [@kaitcham](https://github.com/kaitcham)
 - Twitter: [@kaitcham](https://twitter.com/kaitcham)
-- LinkedIn: [kaitcham](https://linkedin.com/in/kaitcham)
+- LinkedIn: [@kaitcham](https://linkedin.com/in/kaitcham)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/kaitcham/Portfolio/issues).
+Feel free to check the [issues page](https://github.com/kaitcham/M_Portfolio/issues).
 
 ## Show your support
 
